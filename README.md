@@ -82,7 +82,7 @@ We will implement a PoC for the Ninox sign-up flow E2E tests using Playwright. T
 - Submitting the form and verifying workspace access.
   We'll use the staging environment: `https://q-www.ninox.com/`
 
-### 8 PoC usage
+### 8. PoC usage
 
 To install packages for the tests by running:
 
@@ -109,6 +109,7 @@ yarn test
 ## Github Actions
 
 Tests can be also run in [Github Actions](https://github.com/gg-hsi/Ninox-QA-Challenge/actions)
+
 [![Playwright Tests](https://github.com/gg-hsi/Ninox-QA-Challenge/actions/workflows/playwright.yml/badge.svg?branch=master)](https://github.com/gg-hsi/Ninox-QA-Challenge/actions/workflows/playwright.yml)
 
 ### 9. References
