@@ -45,8 +45,6 @@ We need a testing pyramid approach:
 
 #### 4.1 Test Execution Framework
 
-![](test_exercution_framework.png)
-
 ```mermaid
 flowchart TD
     A[Dev Local] -->|Pre-commit| B[Unit/Component Tests]
