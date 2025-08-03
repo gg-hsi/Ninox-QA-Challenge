@@ -47,6 +47,18 @@ We need a testing pyramid approach:
 
 ![](test_exercution_framework.png)
 
+```mermaid
+flowchart TD
+    A[Dev Local] -->|Pre-commit| B[Unit/Component Tests]
+    B --> C[CI Pipeline]
+    C --> D[E2E on Feature Branches]
+    D -->|Failure| E[Auto-Rollback]
+    D -->|Success| F[Integration Deployment]
+    F --> G[E2E on integration]
+    G --> |Failure|E
+    G --> |Success|H[Production Deployment]
+```
+
 ### 5. Managing Flaky Tests
 
 - **Retry Mechanism**: Playwright supports built-in test retries at both the test and suite level, reducing false negatives caused by temporary issues (e.g., network latency).
