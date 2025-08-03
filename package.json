@@ -1,0 +1,30 @@
+{
+  "name": "ninox-qa-challenge",
+  "version": "1.0.0",
+  "author": "GG",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^24.0.13",
+    "@typescript-eslint/eslint-plugin": "^8.19.0",
+    "@typescript-eslint/parser": "^8.19.0",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-playwright": "^2.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.14.0",
+    "http-server": "^14.1.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.19.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0"
+  }
+}
