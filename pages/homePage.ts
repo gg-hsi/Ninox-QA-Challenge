@@ -34,7 +34,7 @@ export default class HomePage {
     await this.signUpButton.click();
     await expect(this.signUpButton).toBeHidden();
     // eslint-disable-next-line playwright/no-wait-for-timeout
-    await this.page.waitForTimeout(1000);
+    await this.page.waitForTimeout(4000);
     const useOptionIsVisible = await this.useOption.isVisible();
     if (useOptionIsVisible) {
       await this.useOption.click();
